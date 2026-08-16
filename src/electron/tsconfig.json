@@ -1,9 +1,13 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "target": "esnext",
-        "module": "nodenext",
-        "outDir": "../../dist-electron",
-        "skipLibCheck": true
-    }
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "../../dist-electron",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["./**/*.ts"]
 }
