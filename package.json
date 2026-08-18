@@ -6,19 +6,21 @@
   "author": "Mohamed Amr",
   "main": "dist-electron/main.js",
   "scripts": {
-  "dev": "npm-run-all --parallel dev:react dev:electron",
-  "dev:react": "vite",
-  "dev:electron": "npm-run-all transpile:electron start:electron",
-  "start:electron": "electron .",
-  "transpile:electron": "tsc --project src/electron/tsconfig.json"
-},
+    "dev": "npm-run-all --parallel dev:react dev:electron",
+    "dev:react": "vite",
+    "dev:electron": "npm-run-all transpile:electron start:electron",
+    "start:electron": "electron .",
+    "transpile:electron": "tsc --project src/electron/tsconfig.json"
+  },
   "dependencies": {
+    "os-utils": "^0.0.14",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.2.0",
+    "@types/os-utils": "^0.0.4",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.0.4",
